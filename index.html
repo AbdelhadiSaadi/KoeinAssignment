@@ -13,12 +13,65 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <title>M | Fanciest Wine in the Region</title>
 </head>
 
 <body>
     <div class="slide--menu">
-        <h2>Explorez NOTRE</h2>
+        <span>✖</span>
+        <div class="slide--menu_title">
+            <h2>EXPLOREZ NOTRE</h2>
+            <h2>BOUTIQUE EN LIGNE</h2>
+        </div>
+        <div class="slide--menu_wrapper">
+            <div class="slide--menu_left">
+                <h5>PAR REGION</h5>
+                <ul>
+
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+
+                </ul>
+            </div>
+            <div class="slide--menu_center">
+                <h5>PAR COULEUR</h5>
+                <ul>
+
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+
+                </ul>
+            </div>
+            <div class="slide--menu_right">
+                <h5>DIVERS</h5>
+                <ul>
+                    <li>Alsace</li>
+                    <li>Alsace</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
     <header class="header">
@@ -75,10 +128,96 @@
 
             </div>
             <div class="section-banner__txt">
-                <p>Notre Maison est renommee en Suisse remonde pour son importation de vins de qualite.
+                <p>
+                    Notre Maison est renommee en Suisse remonde pour son importation de vins de qualite.
                 </p>
+                <a class="btn--primary btn--primary_banner"> </a>
             </div>
 
+        </section>
+
+        <section class="section-bottles">
+
+            <img class="section-bottles_logo" src="img/LOGO-MV whiye.fw.png">
+
+            <div class="slide-bottle">
+
+                <div class="slide-bottle_txt">
+
+                    <h2>NOUS RECOMMENDONS</h2>
+                    <h2>LES ROSES D'ETE</h2>
+
+                </div>
+
+                <div class="slide-bottle_img">
+
+                    <img src="img/agnes-paquet-chassagne-montrachet-blanc-battaudes-G_577222932ece9.png">
+
+                </div>
+
+                <div class="slide-bottle_desc">
+                    <p class="slide-bottle_desc-year">2019</p>
+                    <p class="slide-bottle_desc-title">AGNES PAQUET</p>
+                    <p class="slide-bottle_desc-owner">Gris De Blanc</p>
+                    <p class="slide-bottle_desc-price">13.00 CHF</p>
+                    <a class="btn--primary">Ajouter au panier</a>
+                </div>
+
+
+            </div>
+
+            <div class="section-growers">
+                <h2 class="heading-primary">NOS VIGNERONS</h2>
+                <div class="slide-growers">
+
+                    <div class="slide-growers_item"><img src="img/Image 44.png"></div>
+                    <div class="slide-growers_item"><img src="img/Image 57.png"></div>
+                    <div class="slide-growers_item"><img src="img/Mask Group 71.png"></div>
+                    <div class="slide-growers_item"><img src="img/Image 44.png"></div>
+                    <div class="slide-growers_item"><img src="img/Image 57.png"></div>
+
+                </div>
+            </div>
+            <img src="img/Image 87.png" class="wine--glass">
+        </section>
+
+        <section class="section-boxgrid">
+            <div class="grid-container">
+
+                <div class="left__img">
+                    <img src="img/Image 54.png">
+                    <div class="left__img-txt">
+                        <h2>VENANT DE</h2>
+                        <h2>BORDEAU</h2>
+                    </div>
+                </div>
+                <div class="right-wrapper">
+                    <div class="relative-up">
+
+                        <img class="right-wrapper_upper" src="img/NoPath - Copy (12).png">
+                        <div class="relative-up-txt">
+
+                            <h2>NOTRE COFRET</h2>
+                            <h2>DU MOIS</h2>
+
+                        </div>
+                    </div>
+                    <div class="relative-down">
+
+                        <img class="right-wrapper_lower" src="img/ea-1.png">
+
+                        <div class="relative-down-txt">
+
+                            <h2>PROMOTIONS A</h2>
+                            <h2>NE PAS RATER</h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
     </main>
@@ -95,6 +234,11 @@
             }
 
         });
+        // $('.slide-growers').slick({
+        //     infinite: true,
+        //     slidesToShow: 4,
+        //     slidesToScroll: 1
+        // });
     </script>
 </body>
 

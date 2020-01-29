@@ -1,3 +1,11 @@
+/*=============================================
+=            BANNER            =
+=============================================*/
+
+ul {
+    list-style: none;
+}
+
 .section-banner {
     position: relative;
     &__txt {
@@ -11,22 +19,6 @@
     img {
         width: 100%;
     }
-    @include respond(tab-port) {
-        padding: 20rem 0;
-    }
-}
-
-.slide--menu {
-    height: 0vh;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transition: 1s all;
-    background: $color-dark-beige;
-    -webkit-transition: 1s all;
-    -moz-transition: 1s all;
-    -ms-transition: 1s all;
-    -o-transition: 1s all;
-    -webkit-backface-visibility: hidden;
 }
 
 .left-polygon {
@@ -49,65 +41,308 @@
     right: 0;
 }
 
-.section-features {
-    padding: 20rem 0;
-    background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/nat-4.jpg);
-    background-size: cover;
-    transform: skewY(-7deg);
-    margin-top: -10rem;
-    &>* {
-        transform: skewY(7deg);
-    }
-    @include respond(tab-port) {
-        padding: 10rem 0;
-    }
+.section-banner__txt p {
+    padding-bottom: 4rem;
 }
 
-.section-tours {
-    background-color: $color-grey-light-1;
-    padding: 25rem 0 15rem 0;
-    margin-top: -10rem;
-    @include respond(tab-port) {
-        padding: 20rem 0 10rem 0;
-    }
-}
 
-.section-stories {
-    position: relative;
-    padding: 15rem 0;
-    @include respond(tab-port) {
-        padding: 10rem 0;
-    }
-}
+/*=====  End of BANNER  ======*/
 
-.section-book {
-    padding: 15rem 0;
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-    @include respond(tab-port) {
-        padding: 10rem 0;
-    }
-}
 
-.book {
-    background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../img/nat-10.jpg);
-    background-size: 100%;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-    @include respond(tab-land) {
-        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%), url(../img/nat-10.jpg);
-        background-size: cover;
-    }
-    @include respond(tab-port) {
-        background-image: linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%), url(../img/nat-10.jpg);
-    }
-    &__form {
-        width: 50%;
-        padding: 6rem;
-        @include respond(tab-land) {
-            width: 65%;
+/*=============================================
+=            Slide Menu            =
+=============================================*/
+
+.slide--menu {
+    height: 0vh;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: 1s all;
+    background: $color-dark-beige;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    -webkit-backface-visibility: hidden;
+    &_title {
+        text-align: center;
+        h2:nth-child(1) {
+            color: $color-semi-white;
         }
-        @include respond(tab-port) {
+        h2:nth-child(2) {
+            color: $color-orangy;
+        }
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-around;
+        & li {
+            width: 20%;
+        }
+    }
+    &_left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 16vh;
+    }
+    &_center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 16vh;
+    }
+    &_center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 16vh;
+    }
+}
+
+
+/*=====  End of Slide Menu  ======*/
+
+
+/*=============================================
+=            Bottles            =
+=============================================*/
+
+.section-bottles {
+    background: #24292F;
+    padding: 12rem 0;
+    position: relative;
+    margin-top: -.7rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    &_logo {
+        position: absolute;
+        width: 35%;
+        right: 50%;
+        transform: translate(50%);
+    }
+}
+
+.slide-bottle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+    &_desc {
+        width: 30%;
+        &-year {
+            color: $color-white;
+            background: $color-beige;
+            font-size: 1.5rem;
+            width: 17%;
+            text-align: center;
+        }
+        &-title {
+            color: $color-white;
+            font-size: 1.5rem;
+        }
+        &-owner {
+            color: $color-white;
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+        &-price {
+            color: $color-white;
+            font-size: 1.5rem;
+            padding-bottom: 3rem;
+        }
+    }
+    &_txt {
+        width: 30%;
+        text-align: center;
+        font-size: 1.5rem;
+        h2:nth-child(1) {
+            color: $color-semi-white;
+        }
+        h2:nth-child(2) {
+            color: $color-beige;
+        }
+    }
+    &_img img {
+        width: 75%
+    }
+    &_img {
+        width: 30%;
+        text-align: center;
+    }
+}
+
+.slide-growers {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    &_item {
+        border-radius: 50%;
+        background: white;
+        opacity: .5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.wine--glass {
+    position: absolute;
+    bottom: -3rem;
+    left: -10rem;
+    z-index: 80;
+    width: 24%;
+}
+
+
+/*=====  End of Bottles  ======*/
+
+
+/*=============================================
+=            GridBox            =
+=============================================*/
+
+.section-boxgrid {
+    z-index: 99;
+    background: white;
+    position: relative;
+    .grid-container {
+        display: flex;
+        padding: 5rem 0;
+    }
+    .left__img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 5rem 0;
+        position: relative;
+        &-txt {
+            left: 40%;
+            top: 50%;
+            transform: translate(-40%, -50%);
+            position: absolute;
+            text-align: center;
+            h2:nth-child(1) {
+                background: #24292f;
+                color: white;
+                padding: 0 1rem;
+                width: 10vw;
+                font-size: 2rem;
+            }
+            h2:nth-child(2) {
+                background: $color-beige;
+                color: white;
+                padding: 0 1rem;
+                width: 8vw;
+                margin: auto;
+                font-size: 2rem;
+            }
+        }
+        & img {
+            width: 80%;
+        }
+    }
+    .right-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        &_upper {
+            width: 50%;
+            padding-bottom: 4rem;
+        }
+        &_lower {
             width: 100%;
         }
     }
 }
+
+.relative-down {
+    position: relative;
+    &-txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        h2:nth-child(1) {
+            background: #24292f;
+            color: white;
+            padding: 0 1rem;
+            width: 12vw;
+            font-size: 2rem;
+        }
+        h2:nth-child(2) {
+            background: $color-beige;
+            color: white;
+            padding: 0 1rem;
+            width: 11vw;
+            margin: auto;
+            font-size: 2rem;
+        }
+    }
+}
+
+.relative-up {
+    position: relative;
+    &-txt {
+        position: absolute;
+        background: white;
+        bottom: 4rem;
+        right: 20rem;
+        font-size: 2rem;
+        color: black;
+        padding: 1rem;
+    }
+}
+
+
+/*=====  End of GridBox  ======*/
+
+.btn--primary {
+    position: relative;
+    width: 118px;
+    border: 1px solid $color-beige;
+    color: $color-beige;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.btn--primary::after {
+    content: "\2014";
+    position: absolute;
+    right: -18px;
+    height: 10px;
+    bottom: 0;
+    top: 9px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    background-color: #24292f;
+    padding-bottom: 2px;
+}
+
+.btn--primary_banner::after {
+    position: absolute;
+    right: -18px;
+    height: 10px;
+    bottom: 0;
+    top: 22px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    background-color: rgba(141, 105, 54, 0.44);
+    padding-bottom: 2px;
+}
+
+// @include respond(tab-port) {
+//         padding: 10rem 0;
+//     }
