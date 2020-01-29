@@ -74,16 +74,21 @@ body {
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   /*font-size: 16px;*/
   line-height: 1.7;
   color: #777; }
 
+h2 {
+  font-weight: 100; }
+
 .heading-primary {
-  color: #fff;
+  color: #B2936D;
   text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 0;
+  backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -937,6 +942,9 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+/*=============================================
+=            BANNER            =
+=============================================*/
 .section-banner {
   position: relative; }
   .section-banner__txt {
@@ -951,18 +959,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-banner {
       padding: 20rem 0; } }
-
-.slide--menu {
-  height: 0vh;
-  overflow: hidden;
-  backface-visibility: hidden;
-  transition: 1s all;
-  background: #4D4034;
-  -webkit-transition: 1s all;
-  -moz-transition: 1s all;
-  -ms-transition: 1s all;
-  -o-transition: 1s all;
-  -webkit-backface-visibility: hidden; }
 
 .left-polygon {
   background-image: linear-gradient(to bottom, black -5%, transparent);
@@ -982,58 +978,183 @@ body {
   bottom: 5px;
   right: 0; }
 
-.section-features {
-  padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
-  background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem; }
-  .section-features > * {
-    transform: skewY(7deg); }
-  @media only screen and (max-width: 56.25em) {
-    .section-features {
-      padding: 10rem 0; } }
+/*=====  End of BANNER  ======*/
+/*=============================================
+=            Slide Menu            =
+=============================================*/
+.slide--menu {
+  height: 0vh;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: 1s all;
+  background: #4D4034;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  -webkit-backface-visibility: hidden; }
+  .slide--menu_title {
+    text-align: center; }
+    .slide--menu_title h2:nth-child(1) {
+      color: #FBFBFB; }
+    .slide--menu_title h2:nth-child(2) {
+      color: #DBB68B; }
+  .slide--menu_wrapper {
+    display: flex;
+    justify-content: space-around; }
+    .slide--menu_wrapper li {
+      width: 20%; }
+  .slide--menu_left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 16vh; }
+  .slide--menu_center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 16vh; }
+  .slide--menu_center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 16vh; }
 
-.section-tours {
-  background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section-tours {
-      padding: 20rem 0 10rem 0; } }
+/*=====  End of Slide Menu  ======*/
+/*=============================================
+=            Bottles            =
+=============================================*/
+.section-bottles {
+  background: #24292F;
+  padding: 4rem;
+  position: relative; }
+  .section-bottles_logo {
+    position: absolute;
+    width: 35%;
+    right: 50%;
+    transform: translate(50%); }
 
-.section-stories {
-  position: relative;
-  padding: 15rem 0; }
-  @media only screen and (max-width: 56.25em) {
-    .section-stories {
-      padding: 10rem 0; } }
+.slide-bottle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem; }
+  .slide-bottle_desc {
+    width: 30%; }
+    .slide-bottle_desc-year {
+      color: #fff;
+      background: #B2936D;
+      font-size: 1.5rem;
+      width: 17%;
+      text-align: center; }
+    .slide-bottle_desc-title {
+      color: #fff;
+      font-size: 1.5rem; }
+    .slide-bottle_desc-owner {
+      color: #fff;
+      font-size: 1rem;
+      padding-bottom: 1rem; }
+    .slide-bottle_desc-price {
+      color: #fff;
+      font-size: 1.5rem;
+      padding-bottom: 2rem; }
+  .slide-bottle_txt {
+    width: 30%;
+    text-align: center;
+    font-size: 1.5rem; }
+    .slide-bottle_txt h2:nth-child(1) {
+      color: #FBFBFB; }
+    .slide-bottle_txt h2:nth-child(2) {
+      color: #B2936D; }
+  .slide-bottle_img img {
+    width: 75%; }
+  .slide-bottle_img {
+    width: 30%;
+    text-align: center; }
 
-.section-book {
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-  @media only screen and (max-width: 56.25em) {
-    .section-book {
-      padding: 10rem 0; } }
+.slide-growers {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto; }
+  .slide-growers_item {
+    border-radius: 50%;
+    background: white;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .slide-growers_item img {
+      width: 150px;
+      border-radius: 50%; }
 
-.book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: 100%;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 75em) {
-    .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
-      background-size: cover; } }
-  @media only screen and (max-width: 56.25em) {
-    .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
-  .book__form {
+/*=====  End of Bottles  ======*/
+/*=============================================
+=            GridBox            =
+=============================================*/
+.section-boxgrid .grid-container {
+  display: flex;
+  padding: 5rem 0; }
+
+.section-boxgrid .left__img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  position: relative; }
+  .section-boxgrid .left__img-txt {
+    left: 40%;
+    top: 50%;
+    transform: translate(-40%, -50%);
+    position: absolute;
+    text-align: center; }
+    .section-boxgrid .left__img-txt h2:nth-child(1) {
+      background: #24292f;
+      color: white;
+      padding: 0 1rem;
+      width: 10vw;
+      font-size: 2rem; }
+    .section-boxgrid .left__img-txt h2:nth-child(2) {
+      background: #B2936D;
+      color: white;
+      padding: 0 1rem;
+      width: 8vw;
+      margin: auto;
+      font-size: 2rem; }
+  .section-boxgrid .left__img img {
+    width: 80%; }
+
+.section-boxgrid .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+  .section-boxgrid .right-wrapper_upper {
     width: 50%;
-    padding: 6rem; }
-    @media only screen and (max-width: 75em) {
-      .book__form {
-        width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
-      .book__form {
-        width: 100%; } }
+    padding-bottom: 4rem; }
+  .section-boxgrid .right-wrapper_lower {
+    width: 100%; }
+
+/*=====  End of GridBox  ======*/
+.btn--primary {
+  position: relative;
+  width: 118px;
+  border: 1px solid #B2936D;
+  color: #B2936D;
+  padding: 1rem;
+  text-transform: uppercase; }
+
+.btn--primary::after {
+  content: "\2014";
+  position: absolute;
+  right: -18px;
+  height: 10px;
+  bottom: 0;
+  top: 9px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+  background-color: #24292f;
+  padding-bottom: 2px; }
